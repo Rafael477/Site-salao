@@ -52,12 +52,20 @@ ul {
 
 .menu {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 40px;
     list-style: none;
-    align-items: center;
     margin: 0;
     padding: 0;
+}
 
+.menu li a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s;
 }
 
 html {
@@ -117,6 +125,26 @@ html {
     font-weight: 600;
     text-decoration: none;
     color: wheat;
+}
+
+.btn-voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #522200;
+    color: wheat;
+    padding: 12px 16px;
+    border-radius: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.btn-voltar-topo:hover {
+    background-color: #7c4212;
 }
 
 .titulo-servicos {
@@ -276,7 +304,9 @@ html {
 .paragrafo-contato {
 
     background-color: #522200;
-    margin: 10px 400px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
     padding: 10px 20px;
     border-radius: 10px;
     color: wheat;
@@ -288,7 +318,9 @@ html {
 
 .endereco {
     background-color: #522200;
-    margin: 10px 400px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
     padding: 10px 20px;
     border-radius: 10px;
     color: wheat;
@@ -350,4 +382,46 @@ footer a {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .principal {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .principal h2 {
+        font-size: 2.5rem;
+        margin-top: 150px;
+        margin-bottom: 40px;
+    }
+
+    .container-servicos {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .paragrafo-contato,
+    .endereco {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .img-sobre {
+        width: 180px;
+        height: 180px;
+    }
 }
