@@ -1,1 +1,51 @@
-# Site-salao
+# 💇‍♀️ Site | Salão de Beleza Rute Assis
+
+Este projeto é um site simples e elegante para o salão de beleza **Rute Assis**, contendo:
+
+- Uma **página principal** com informações introdutórias.
+- Uma **página de tabela de preços** com os valores dos serviços oferecidos.
+
+O site foi construído com foco em **acessibilidade, estética leve e navegação intuitiva**.
+
+---
+
+## 📄 Páginas do Projeto
+
+### 🏠 Página Principal (`index.html`)
+A página inicial serve como o ponto de entrada do site e pode conter:
+
+- Boas-vindas aos visitantes
+- Imagens dos serviços
+- Botão/link para visualizar os preços
+- Informações de contato e localização
+
+---
+
+### 💰 Página de Tabela de Preços (`tabela.html`)
+Apresenta os preços atualizados dos principais serviços:
+
+- Tranças soltas / meia cabeça — R$ 150,00  
+- Chanel — R$ 100,00  
+- Unhas — R$ 50,00  
+- Manicure — R$ 30,00  
+- Pedicure — R$ 40,00  
+- Design de Sobrancelhas — R$ 25,00  
+- Limpeza de Pele — R$ 80,00
+
+Inclui um botão/link para voltar à página principal.
+
+---
+
+## 🖌️ Estilo
+
+Todos os estilos são aplicados por meio do arquivo:
+
+- `style.css`: contém as regras visuais reutilizáveis do projeto (como fonte, cores, margens, etc.)
+
+A fonte principal utilizada é a **Roboto**, do Google Fonts.
+
+---
+
+## 📁 Estrutura do Projeto
+
+
