@@ -1,3 +1,4 @@
+
 # 💇‍♀️ Site | Salão de Beleza Rute Assis
 
 Este projeto é um site simples e elegante para o salão de beleza **Rute Assis**, contendo:
@@ -79,6 +80,3 @@ Você pode abrir os arquivos `.html` diretamente em seu navegador ou publicar o 
 Este projeto é de uso pessoal e educacional. Pode ser reutilizado com os devidos créditos.
 
 ---
-
-
-
