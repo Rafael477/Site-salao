@@ -1,84 +1,52 @@
-# 💇‍♀️ Site | Salão de Beleza Rute Assis
+<h1 align="center">💇‍♀️✨ Salão de Beleza | Rute Assis ✨💅</h1>
 
-Este projeto é um site simples e elegante para o salão de beleza **Rute Assis**, contendo:
-
-- Uma **página principal** com informações introdutórias.
-- Uma **página de tabela de preços** com os valores dos serviços oferecidos.
-
-O site foi construído com foco em **acessibilidade, estética leve e navegação intuitiva**.
-
----
-
-## 📄 Páginas do Projeto
-
-### 🏠 Página Principal (`index.html`)
-A página inicial serve como o ponto de entrada do site e pode conter:
-
-- Boas-vindas aos visitantes
-- Imagens dos serviços
-- Botão/link para visualizar os preços
-- Informações de contato e localização
+<p align="center">
+  <img src="https://img.shields.io/badge/Projeto-HTML%20%2B%20CSS-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Estilo-Responsivo-purple?style=for-the-badge"/>
+</p>
 
 ---
 
-### 💰 Página de Tabela de Preços (`tabela.html`)
-Apresenta os preços atualizados dos principais serviços:
+## 🧾 Sobre o Projeto
 
-- Tranças soltas / meia cabeça — R$ 150,00  
-- Chanel — R$ 100,00  
-- Unhas — R$ 50,00  
-- Manicure — R$ 30,00  
-- Pedicure — R$ 40,00  
-- Design de Sobrancelhas — R$ 25,00  
-- Limpeza de Pele — R$ 80,00
-
-Inclui um botão/link para voltar à página principal.
+Este projeto é um site estático com duas páginas, desenvolvido para o **Salão de Beleza Rute Assis**. Ele apresenta os serviços oferecidos, seus respectivos preços e foi pensado com foco em **simplicidade, elegância e facilidade de navegação**.
 
 ---
 
-## 🖌️ Estilo
+## 🎬 Demonstração
 
-Todos os estilos são aplicados por meio do arquivo:
-
-- `style.css`: contém as regras visuais reutilizáveis do projeto (como fonte, cores, margens, etc.)
-
-A fonte principal utilizada é a **Roboto**, do Google Fonts.
+### ✨ Navegação entre páginas:
+![Demonstração da Navegação](navegacao.gif) <!-- Altere para o caminho correto caso esteja no GitHub -->
 
 ---
 
-## 📁 Estrutura do Projeto
+## 💻 Funcionalidades
 
+📌 **Página Principal (`index.html`)**
+> Introdução ao salão, imagem/banner (opcional), e botão de acesso à tabela de preços.
 
----
+📌 **Tabela de Preços (`tabela.html`)**
+> Página dedicada aos preços dos serviços. Visual limpo e elegante, com botão de retorno para a página inicial.
 
-## 🛠️ Tecnologias Utilizadas
-
-- HTML5  
-- CSS3  
-- Google Fonts: Roboto
-
----
-
-## 🌍 Como Visualizar
-
-Você pode abrir os arquivos `.html` diretamente em seu navegador ou publicar o site usando:
-
-- [GitHub Pages](https://pages.github.com/)
-- Vercel / Netlify
-- Seu próprio servidor
+| 💅 Serviço                     | 💰 Preço     |
+|------------------------------|-------------|
+| Tranças soltas / meia cabeça | R$ 150,00   |
+| Chanel                       | R$ 100,00   |
+| Unhas                        | R$ 50,00    |
+| Manicure                     | R$ 30,00    |
+| Pedicure                     | R$ 40,00    |
+| Design de Sobrancelhas       | R$ 25,00    |
+| Limpeza de Pele              | R$ 80,00    |
 
 ---
 
-## 👥 Autoria
+## 🧩 Estrutura do Projeto
 
-- Site desenvolvido por **Rafael Aniceto**
-- Conteúdo do salão fornecido por **Rute Assis**
-
----
-
-## 📜 Licença
-
-Este projeto é de uso pessoal e educacional. Pode ser reutilizado com os devidos créditos.
-
----
-
+```bash
+📦 projeto/
+├── index.html              # Página inicial
+├── tabela.html             # Página de preços
+├── style.css               # Estilos aplicados
+├── navegacao.gif           # GIF de demonstração
+└── README.md               # Este arquivo
