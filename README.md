@@ -49,3 +49,36 @@ A fonte principal utilizada é a **Roboto**, do Google Fonts.
 ## 📁 Estrutura do Projeto
 
 
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+- Google Fonts: Roboto
+
+---
+
+## 🌍 Como Visualizar
+
+Você pode abrir os arquivos `.html` diretamente em seu navegador ou publicar o site usando:
+
+- [GitHub Pages](https://pages.github.com/)
+- Vercel / Netlify
+- Seu próprio servidor
+
+---
+
+## 👥 Autoria
+
+- Site desenvolvido por **Rafael Aniceto**
+- Conteúdo do salão fornecido por **Rute Assis**
+
+---
+
+## 📜 Licença
+
+Este projeto é de uso pessoal e educacional. Pode ser reutilizado com os devidos créditos.
+
+---
+
