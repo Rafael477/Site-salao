@@ -1,82 +1,92 @@
+<h1 align="center">💇‍♀️✨ Salão de Beleza | Rute Assis ✨💅</h1>
 
-# 💇‍♀️ Site | Salão de Beleza Rute Assis
-
-Este projeto é um site simples e elegante para o salão de beleza **Rute Assis**, contendo:
-
-- Uma **página principal** com informações introdutórias.
-- Uma **página de tabela de preços** com os valores dos serviços oferecidos.
-
-O site foi construído com foco em **acessibilidade, estética leve e navegação intuitiva**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Projeto-HTML%20%2B%20CSS-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Estilo-Responsivo-purple?style=for-the-badge"/>
+</p>
 
 ---
 
-## 📄 Páginas do Projeto
+## 🧾 Sobre o Projeto
 
-### 🏠 Página Principal (`index.html`)
-A página inicial serve como o ponto de entrada do site e pode conter:
-
-- Boas-vindas aos visitantes
-- Imagens dos serviços
-- Botão/link para visualizar os preços
-- Informações de contato e localização
+Este projeto é um site estático com duas páginas, desenvolvido para o **Salão de Beleza Rute Assis**. Ele apresenta os serviços oferecidos, seus respectivos preços e foi pensado com foco em **simplicidade, elegância e facilidade de navegação**.
 
 ---
 
-### 💰 Página de Tabela de Preços (`tabela.html`)
-Apresenta os preços atualizados dos principais serviços:
+## 🎬 Demonstração
 
-- Tranças soltas / meia cabeça — R$ 150,00  
-- Chanel — R$ 100,00  
-- Unhas — R$ 50,00  
-- Manicure — R$ 30,00  
-- Pedicure — R$ 40,00    
-
-Inclui um botão/link para voltar à página principal.
+### ✨ Navegação entre páginas:
+![Demonstração da Navegação](navegacao.gif) <!-- Altere para o caminho correto caso esteja no GitHub -->
 
 ---
 
-## 🖌️ Estilo
+## 💻 Funcionalidades
 
-Todos os estilos são aplicados por meio do arquivo:
+📌 **Página Principal (`index.html`)**
+> Introdução ao salão, imagem/banner (opcional), e botão de acesso à tabela de preços.
 
-- `style.css`: contém as regras visuais reutilizáveis do projeto (como fonte, cores, margens, etc.)
+📌 **Tabela de Preços (`tabela.html`)**
+> Página dedicada aos preços dos serviços. Visual limpo e elegante, com botão de retorno para a página inicial.
 
-A fonte principal utilizada é a **Roboto**, do Google Fonts.
-
----
-
-## 📁 Estrutura do Projeto
-
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- HTML5  
-- CSS3  
-- Google Fonts: Roboto
+| 💅 Serviço                     | 💰 Preço     |
+|------------------------------|-------------|
+| Tranças soltas / meia cabeça | R$ 150,00   |
+| Chanel                       | R$ 100,00   |
+| Unhas                        | R$ 50,00    |
+| Manicure                     | R$ 30,00    |
+| Pedicure                     | R$ 40,00    |
+| Design de Sobrancelhas       | R$ 25,00    |
+| Limpeza de Pele              | R$ 80,00    |
 
 ---
 
-## 🌍 Como Visualizar
+## 🧩 Estrutura do Projeto
 
-Você pode abrir os arquivos `.html` diretamente em seu navegador ou publicar o site usando:
+```
+📦 projeto/
+├── index.html              # Página inicial
+├── tabela.html             # Página de preços
+├── style.css               # Estilos aplicados
+├── navegacao.gif           # GIF de demonstração
+└── README.md               # Este arquivo
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- Vercel / Netlify
-- Seu próprio servidor
+---
+
+## 🌐 Tecnologias Utilizadas
+
+- ✅ HTML5 semântico
+- 🎨 CSS3 responsivo
+- 🔤 Google Fonts (Roboto)
+
+---
+
+## 🚀 Como Usar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/salao-rute-assis.git
+   ```
+2. Abra o arquivo `index.html` no navegador.
+3. (Opcional) Publique em um serviço como GitHub Pages.
 
 ---
 
 ## 👥 Autoria
 
-- Site desenvolvido por **Rafael Aniceto**
-- Conteúdo do salão fornecido por **Rute Assis**
+- 👨‍💻 Desenvolvedor: **Rafael Aniceto**
+- 💇‍♀️ Cliente: **Rute Assis**
 
 ---
 
 ## 📜 Licença
 
-Este projeto é de uso pessoal e educacional. Pode ser reutilizado com os devidos créditos.
+Este projeto é de uso **educacional e pessoal**.  
+Fique à vontade para reutilizar com os devidos créditos.
 
 ---
+
+<p align="center">
+  Feito com 💖 e código puro.
+</p>

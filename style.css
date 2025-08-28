@@ -1,0 +1,595 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #702f01;
+    --secondary-color: #522200;
+    --accent-color: #f5c885;
+    --text-light: wheat;
+    --text-dark: #301400;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background: var(--primary-color);
+    background: linear-gradient(180deg, rgba(112, 47, 1, 1), rgba(166, 72, 0, 1), rgba(250, 200, 147, 1));
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li a {
+
+    text-decoration: none;
+    color: wheat;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+    padding: 10px 80px;
+}
+
+.menu li a:hover {
+    color: var(--accent-color);
+}
+
+/* Estilo para o menu ativo */
+.menu a.active {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Estilo para o link da área administrativa */
+.menu a.admin-link {
+    color: #666;
+    font-size: 0.9em;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.menu a.admin-link:hover {
+    color: #ff6b6b;
+    opacity: 1;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.menu li a:hover::after {
+    width: 70%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.efeito-cursor {
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.efeito-cursor:hover {
+    transform: translateY(-10px);
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+
+}
+
+.principal h2 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 100px;
+    letter-spacing: -4px;
+    margin-top: 250px;
+    color: wheat;
+    text-align: center;
+}
+
+.destaque {
+    color: #522200;
+    border: #f5c885 solid 2px;
+    padding: 1px 15px;
+    text-shadow: 1px 1px 2px rgba(255, 175, 71, 0.384);
+    border-radius: 10px;
+
+}
+
+.principal p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-light);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #522200;
+    color: wheat;
+    padding: 12px 16px;
+    border-radius: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.btn-voltar-topo:hover {
+    background-color: #7c4212;
+}
+
+.titulo-servicos {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.589);
+}
+
+.titulo-servicos::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100px;
+    height: 3px;
+    background-color: #522200;
+}
+
+.titulo-contato {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.568);
+}
+
+.titulo-contato::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 50px;
+    height: 3px;
+    background-color: #522200;
+}
+
+.descricao-servicos {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding: 5px;
+    color: white;
+}
+
+.container-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+
+}
+
+.card-servico {
+    background-color: rgba(82, 34, 0, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-color), 0 0 30px #7c4212;
+    transition: var(--transition);
+    transform-origin: center;
+}
+
+.card-servico:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--accent-color), 0 0 40px #7c4212;
+}
+
+.img-servico {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info-servico {
+    padding: 20px;
+}
+
+.info-servico h3 {
+    margin-bottom: 10px;
+}
+
+.info-servico p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.info-servico a {
+    color: var(--accent-color);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.info-servico a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.info-contato {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.titulo-sobre {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #522200;
+}
+
+.titulo-sobre::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 50px;
+    height: 3px;
+    background-color: #522200;
+}
+
+
+.container-sobre {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    /* permite quebrar em telas menores */
+    flex-wrap: wrap;
+    /* permite quebrar em telas menores */
+}
+
+/* Estilo do texto */
+.info-sobre {
+    flex: 1;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.img-sobre {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30%;
+    /* deixa a imagem redonda */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* sombra suave */
+    border: 4px solid #f5c885;
+    /* borda personalizada */
+    border-radius: 30%;
+    /* deixa a imagem redonda */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* sombra suave */
+    border: 4px solid #f5c885;
+    /* borda personalizada */
+}
+
+.info-sobre {
+    flex: 1;
+    /* faz o texto ocupar o espaço restante */
+    flex: 1;
+    /* faz o texto ocupar o espaço restante */
+}
+
+
+
+.paragrafo-titulo-contato {
+    font-size: 1.3rem;
+}
+
+.paragrafo-atendimento {
+    font-size: 1.3rem;
+}
+
+.paragrafo-contato {
+    background-color: var(--secondary-color);
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: var(--text-light);
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.paragrafo-contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.endereco {
+    background-color: #522200;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: wheat;
+    text-align: center;
+}
+
+.paragrafo-contato a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+h1 {
+    text-align: center;
+    color: #301400;
+}
+
+table {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin: 90px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+thead {
+    background-color: #522200;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f0e6dd;
+}
+
+span {
+    color: wheat;
+}
+
+/* Estilo para botões de agendamento na tabela de preços */
+.btn-agendar {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.btn-agendar:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos adicionais para botões de agendamento na tabela */
+.tabela-precos .btn-agendar {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #522200;
+}
+
+.tabela-precos .btn-agendar:hover {
+    background-color: #7a3300;
+    transform: translateY(-2px);
+}
+
+h1 {
+    text-align: center;
+    color: #301400;
+}
+
+table {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    margin: 90px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+thead {
+    background-color: #522200;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f0e6dd;
+}
+
+span {
+    color: wheat;
+}
+
+footer {
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 1px solid #522200;
+
+}
+
+footer a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .principal {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .principal h2 {
+        font-size: 2.5rem;
+        margin-top: 150px;
+        margin-bottom: 40px;
+    }
+
+    .container-servicos {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .paragrafo-contato,
+    .endereco {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .img-sobre {
+        width: 180px;
+        height: 180px;
+    }
+}

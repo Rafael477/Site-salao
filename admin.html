@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Área Administrativa | Salão de Beleza Rute Assis</title>
+</head>
+
+<body>
+    <header id="menu-header">
+        <div class="nav-container">
+            <ul class="menu" id="menu">
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tabela-precos.html">Tabela de Preços</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="admin-hero">
+        <div class="hero-content">
+            <h1>Área <span class="destaque">Administrativa</span></h1>
+            <p>Gerencie as informações de contato e configurações do sistema.</p>
+        </div>
+    </section>
+
+    <section class="admin-container" id="admin-area">
+        <!-- Área de login será exibida inicialmente -->
+        <div class="login-container" id="login-area">
+            <h2>Login Administrativo</h2>
+            <form id="login-form" class="admin-form">
+                <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" required placeholder="Nome de usuário">
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Senha de acesso">
+                </div>
+
+                <button type="submit" class="btn btn-login">Entrar</button>
+            </form>
+        </div>
+
+        <!-- Painel administrativo (inicialmente oculto) -->
+        <div class="admin-panel" id="admin-panel" style="display: none;">
+            <h2>Painel de Controle</h2>
+            
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="contato">Informações de Contato</button>
+                <button class="tab-btn" data-tab="horarios">Horários de Funcionamento</button>
+                <button class="tab-btn" data-tab="sistema">Configurações do Sistema</button>
+            </div>
+            
+            <div class="tab-content" id="contato-tab">
+                <h3>Informações de Contato</h3>
+                <form id="contato-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="nome-salao">Nome do Salão</label>
+                        <input type="text" id="nome-salao" name="nome-salao" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone-salao">Telefone/WhatsApp</label>
+                        <input type="tel" id="telefone-salao" name="telefone-salao" required placeholder="(00) 00000-0000" maxlength="15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-salao">E-mail</label>
+                        <input type="email" id="email-salao" name="email-salao" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco-salao">Endereço</label>
+                        <input type="text" id="endereco-salao" name="endereco-salao">
+                    </div>
+
+                    <button type="submit" class="btn btn-salvar">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <div class="tab-content" id="horarios-tab" style="display: none;">
+                <h3>Horários de Funcionamento</h3>
+                <form id="horarios-form" class="admin-form">
+                    <div class="dias-semana">
+                        <div class="form-group dia-semana">
+                            <label>Segunda-feira</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="segunda-abertura" id="segunda-abertura">
+                                <span>até</span>
+                                <input type="time" name="segunda-fechamento" id="segunda-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="segunda-fechado" id="segunda-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Terça-feira</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="terca-abertura" id="terca-abertura">
+                                <span>até</span>
+                                <input type="time" name="terca-fechamento" id="terca-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="terca-fechado" id="terca-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Quarta-feira</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="quarta-abertura" id="quarta-abertura">
+                                <span>até</span>
+                                <input type="time" name="quarta-fechamento" id="quarta-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="quarta-fechado" id="quarta-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Quinta-feira</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="quinta-abertura" id="quinta-abertura">
+                                <span>até</span>
+                                <input type="time" name="quinta-fechamento" id="quinta-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="quinta-fechado" id="quinta-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Sexta-feira</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="sexta-abertura" id="sexta-abertura">
+                                <span>até</span>
+                                <input type="time" name="sexta-fechamento" id="sexta-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="sexta-fechado" id="sexta-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Sábado</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="sabado-abertura" id="sabado-abertura">
+                                <span>até</span>
+                                <input type="time" name="sabado-fechamento" id="sabado-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="sabado-fechado" id="sabado-fechado">
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group dia-semana">
+                            <label>Domingo</label>
+                            <div class="horario-inputs">
+                                <input type="time" name="domingo-abertura" id="domingo-abertura">
+                                <span>até</span>
+                                <input type="time" name="domingo-fechamento" id="domingo-fechamento">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="domingo-fechado" id="domingo-fechado" checked>
+                                    <span class="checkmark"></span>
+                                    Fechado
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-salvar">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <div class="tab-content" id="sistema-tab" style="display: none;">
+                <h3>Configurações do Sistema</h3>
+                <form id="sistema-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="intervalo-agendamento">Intervalo entre Agendamentos (minutos)</label>
+                        <select id="intervalo-agendamento" name="intervalo-agendamento">
+                            <option value="30">30 minutos</option>
+                            <option value="60" selected>1 hora</option>
+                            <option value="90">1 hora e 30 minutos</option>
+                            <option value="120">2 horas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dias-antecedencia">Dias de Antecedência para Agendamento</label>
+                        <input type="number" id="dias-antecedencia" name="dias-antecedencia" min="1" max="90" value="60">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="notificacao-email" name="notificacao-email" checked>
+                            <span class="checkmark"></span>
+                            Enviar notificações por e-mail
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="notificacao-whatsapp" name="notificacao-whatsapp" checked>
+                            <span class="checkmark"></span>
+                            Enviar notificações por WhatsApp
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-salvar">Salvar Alterações</button>
+                </form>
+            </div>
+            
+            <div class="admin-actions">
+                <button id="btn-logout" class="btn btn-logout">Sair</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Salão de Beleza | Rute Assis. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ por <a href="https://www.linkedin.com/in/rafael-aniceto-da-silva-do-nascimento-07542b91/">Rafael Aniceto</a></p>
+    </footer>
+
+    <a href="#" class="btn-voltar-topo">↑ Topo</a>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

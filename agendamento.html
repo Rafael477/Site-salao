@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Agendamento | Salão de Beleza Rute Assis</title>
+</head>
+
+<body>
+    <header id="menu-header">
+        <div class="nav-container">
+            <ul class="menu" id="menu">
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tabela-precos.html">Tabela de Preços</a></li>
+                <li><a href="agendamento.html" class="active">Agendamento</a></li>
+                <li><a href="admin.html" class="admin-link">Área Admin</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="agendamento-hero">
+        <div class="hero-content">
+            <h1>Agende seu <span class="destaque">Horário</span></h1>
+            <p>Escolha o serviço, data e horário que melhor se adequam à sua agenda.</p>
+        </div>
+    </section>
+
+    <section class="agendamento-container">
+        <div class="agendamento-form-container">
+            <h2>Formulário de Agendamento</h2>
+            <form id="agendamento-form" class="agendamento-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone/WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"
+                        maxlength="15">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria-servico">Categoria de Serviço</label>
+                    <select id="categoria-servico" name="categoria-servico" required>
+                        <option value="" disabled selected>Selecione uma categoria</option>
+                        <option value="trancas">Tranças</option>
+                        <option value="mega-hair">Mega Hair</option>
+                        <option value="unhas">Unhas</option>
+                        <option value="outros">Outros Serviços</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="servico-container">
+                    <label for="servico">Serviço Específico</label>
+                    <select id="servico" name="servico" required disabled>
+                        <option value="" disabled selected>Primeiro selecione uma categoria</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data Desejada</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Horário Preferido</label>
+                    <select id="horario" name="horario" required>
+                        <option value="" disabled selected>Selecione um horário</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes">Observações Adicionais</label>
+                    <textarea id="observacoes" name="observacoes" rows="4"
+                        placeholder="Informe detalhes adicionais sobre o serviço desejado"></textarea>
+                </div>
+
+                <div class="form-group resumo-agendamento" id="resumo-agendamento">
+                    <h3>Resumo do Agendamento</h3>
+                    <div id="resumo-conteudo">
+                        <p>Selecione os serviços para visualizar o resumo</p>
+                    </div>
+                    <div id="preco-total">
+                        <p>Total: R$ 0,00</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-agendar">Confirmar Agendamento</button>
+            </form>
+        </div>
+
+        <div class="calendario-container">
+            <h2>Disponibilidade</h2>
+            <div class="calendario">
+                <div class="calendario-header">
+                    <button id="mes-anterior">&lt;</button>
+                    <h3 id="nome-mes">Mês Ano</h3>
+                    <button id="proximo-mes">&gt;</button>
+                </div>
+                <div class="dia-semana">Dom</div>
+                <div class="dia-semana">Seg</div>
+                <div class="dia-semana">Ter</div>
+                <div class="dia-semana">Qua</div>
+                <div class="dia-semana">Qui</div>
+                <div class="dia-semana">Sex</div>
+                <div class="dia-semana">Sáb</div>
+                <div id="dias-calendario" class="dias-calendario">
+                    <!-- Dias serão gerados via JavaScript -->
+                </div>
+            </div>
+            <div class="horarios-disponiveis">
+                <h3>Horários Disponíveis</h3>
+                <div id="horarios-lista" class="horarios-lista">
+                    <!-- Horários serão gerados via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Salão de Beleza | Rute Assis. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ por <a
+                href="https://www.linkedin.com/in/rafael-aniceto-da-silva-do-nascimento-07542b91/">Rafael Aniceto</a>
+        </p>
+    </footer>
+
+    <a href="#" class="btn-voltar-topo">↑ Topo</a>
+
+    <!-- EmailJS para envio de emails -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Inicializar EmailJS com seu User ID (você precisará criar uma conta em emailjs.com)
+            // emailjs.init("seu_user_id_aqui");
+        })();
+    </script>
+
+    <!-- Carregar script de administração para obter configurações do salão -->
+    <script src="admin.js"></script>
+    <script src="agendamento.js"></script>
+</body>
+
+</html>

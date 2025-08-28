@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Preços | Rute Assis</title>
+    <link rel="stylesheet" href="style.css"> <!-- reutilize seu CSS -->
+</head>
+
+
+<body>
+    <header id="menu-header">
+        <div class="nav-container">
+            <ul class="menu" id="menu">
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tabela-precos.html" class="active">Tabela de Preços</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="admin.html" class="admin-link">Área Admin</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div style="margin-top: 100px;">
+        <h1 style="text-align: center; color: #522200;">Tabela de Preços</h1>
+    </div>
+
+
+    <div class="tabela-precos" style="max-width: 1200px; margin: 0; padding: 100px; font-family: 'Roboto', sans-serif;">
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mão de Obra <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tranças soltas / meia cabeça</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chanel</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-chanel', '110,00')">R$ 110,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-chanel', '115,00')">R$ 115,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-chanel', '225,00')">R$ 225,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-chanel', '237,00')">R$ 237,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-chanel')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até o feixo</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-feixo', '215,00')">R$ 215,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-feixo', '220,00')">R$ 220,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-feixo', '231,00')">R$ 231,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-feixo', '244,00')">R$ 244,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-feixo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até a Cintura</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-cintura', '237,00')">R$ 237,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-cintura', '250,00')">R$ 250,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-cintura', '320,00')">R$ 320,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-cintura', '325,00')">R$ 325,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-cintura')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até o Bumbum</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-bumbum', '310,00')">R$ 310,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-bumbum', '327,00')">R$ 327,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-bumbum', '420,00')">R$ 420,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('tranca-bumbum', '425,00')">R$ 425,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-bumbum')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mão de Obra <span>Sem Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tranças</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Boxeadora</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('boxeadora', '120,00')">R$ 120,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('boxeadora', '123,00')">R$ 123,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('boxeadora', '130,00')">R$ 130,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('boxeadora', '137,00')">R$ 137,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'boxeadora')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Ghana Braids</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('ghana-braids', '180,00')">R$ 180,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('ghana-braids', '184,00')">R$ 184,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('ghana-braids', '194,00')">R$ 194,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('ghana-braids', '205,00')">R$ 205,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'ghana-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Rabo de Cavalo</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('rabo-cavalo', '180,00')">R$ 180,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('rabo-cavalo', '184,00')">R$ 184,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('rabo-cavalo', '194,00')">R$ 194,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('rabo-cavalo', '205,00')">R$ 205,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'rabo-cavalo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Fulani Braids</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('fulani-braids', '180,00')">R$ 180,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('fulani-braids', '184,00')">R$ 184,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('fulani-braids', '194,00')">R$ 194,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('fulani-braids', '205,00')">R$ 205,00</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'fulani-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Gypsy Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'gypsy-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Boho Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'boho-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Box Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'box-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Tira</td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('nago-tira', '40,00')">R$ 40,00</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('nago-tira', '40,80')">R$ 40,80</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('nago-tira', '42,95')">R$ 42,95</a></td>
+                    <td><a href="agendamento.html" class="preco-link" onclick="selecionarServicoComPreco('nago-tira', '45,23')">R$ 45,23</a></td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-tira')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Lateral ou Topo</td>
+                    <td>R$ 25,00</td>
+                    <td>R$ 25,50</td>
+                    <td>R$ 26,85</td>
+                    <td>R$ 28,27</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'lateral-topo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Lateral</td>
+                    <td>R$ 25,00</td>
+                    <td>R$ 25,50</td>
+                    <td>R$ 26,85</td>
+                    <td>R$ 28,27</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-lateral')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Bolhas</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 50,99</td>
+                    <td>R$ 53,69</td>
+                    <td>R$ 56,54</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-bolhas')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Topo</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 50,99</td>
+                    <td>R$ 53,69</td>
+                    <td>R$ 56,54</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-topo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Diademas</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 101,99</td>
+                    <td>R$ 107,40</td>
+                    <td>R$ 113,10</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-diademas')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Coração</td>
+                    <td>R$ 5,00</td>
+                    <td>R$ 5,09</td>
+                    <td>R$ 5,36</td>
+                    <td>R$ 5,64</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-coracao')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Coração | C/ Tira</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 101,99</td>
+                    <td>R$ 107,40</td>
+                    <td>R$ 113,10</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-coracao-tira')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace <span>Sem Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 190,00</td>
+                    <td>R$ 190,50</td>
+                    <td>R$ 225,20</td>
+                    <td>R$ 237,80</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair-sem-material')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace | Cabelo Orgânico <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Entre</th>
+                    <th>Á</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 550,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair-organico')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace | Cabelo Humano <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Entre</th>
+                    <th>Á</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 630,00</td>
+                    <td>R$ 1.050,50</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair-humano')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mão de Obra <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tranças soltas / meia cabeça</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chanel</td>
+                    <td>R$ 110,00</td>
+                    <td>R$ 115,00</td>
+                    <td>R$ 225,00</td>
+                    <td>R$ 237,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-chanel')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até o feixo</td>
+                    <td>R$ 215,00</td>
+                    <td>R$ 220,00</td>
+                    <td>R$ 231,00</td>
+                    <td>R$ 244,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-feixo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até a Cintura</td>
+                    <td>R$ 237,00</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 320,00</td>
+                    <td>R$ 325,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-cintura')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Até o Bumbum</td>
+                    <td>R$ 310,00</td>
+                    <td>R$ 327,00</td>
+                    <td>R$ 420,00</td>
+                    <td>R$ 425,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'tranca-bumbum')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mão de Obra <span>Sem Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tranças</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Boxeadora</td>
+                    <td>R$ 120,00</td>
+                    <td>R$ 123,00</td>
+                    <td>R$ 130,00</td>
+                    <td>R$ 137,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'boxeadora')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Ghana Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'ghana-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Rabo de Cavalo</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'rabo-cavalo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Fulani Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'fulani-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Gypsy Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'gypsy-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Boho Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'boho-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Box Braids</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 184,00</td>
+                    <td>R$ 194,00</td>
+                    <td>R$ 205,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'box-braids')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Tira</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 40,80</td>
+                    <td>R$ 42,95</td>
+                    <td>R$ 45,23</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-tira')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Lateral ou Topo</td>
+                    <td>R$ 25,00</td>
+                    <td>R$ 25,50</td>
+                    <td>R$ 26,85</td>
+                    <td>R$ 28,27</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'lateral-topo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Lateral</td>
+                    <td>R$ 25,00</td>
+                    <td>R$ 25,50</td>
+                    <td>R$ 26,85</td>
+                    <td>R$ 28,27</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-lateral')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Bolhas</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 50,99</td>
+                    <td>R$ 53,69</td>
+                    <td>R$ 56,54</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-bolhas')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Topo</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 50,99</td>
+                    <td>R$ 53,69</td>
+                    <td>R$ 56,54</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-topo')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Diademas</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 101,99</td>
+                    <td>R$ 107,40</td>
+                    <td>R$ 113,10</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-diademas')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Coração</td>
+                    <td>R$ 5,00</td>
+                    <td>R$ 5,09</td>
+                    <td>R$ 5,36</td>
+                    <td>R$ 5,64</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-coracao')">Agendar</a></td>
+                </tr>
+                <tr>
+                    <td>Nagô Coração | C/ Tira</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 101,99</td>
+                    <td>R$ 107,40</td>
+                    <td>R$ 113,10</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'nago-coracao-tira')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace <span>Sem Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Preço Pix</th>
+                    <th>Débito</th>
+                    <th>Crédito Avista</th>
+                    <th>Crédito Acima de 2x</th>
+                    <th>Agendar</th>
+                    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 190,00</td>
+                    <td>R$ 190,50</td>
+                    <td>R$ 225,20</td>
+                    <td>R$ 237,80</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace | Cabelo Orgânico <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Entre</th>
+                    <th>Á</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 200,00</td>
+                    <td>R$ 550,00</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair-organico')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1 style="text-align: center; margin: 50px; margin-bottom: 25px; position: relative; left: 9%; height: 5px;">
+            Mega Hair Entrelace | Cabelo Humano <span>Com Material</span></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entrelace</th>
+                    <th>Entre</th>
+                    <th>Á</th>
+                    <th>Agendar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Hair</td>
+                    <td>R$ 630,00</td>
+                    <td>R$ 1.050,50</td>
+                    <td><a href="agendamento.html" class="btn-agendar" onclick="localStorage.setItem('servicoSelecionado', 'mega-hair-humano')">Agendar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 Salão de Beleza | Rute Assis. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ por Rafael Aniceto</p>
+    </footer>
+    
+    <script>
+        // Função para selecionar um serviço e redirecionar para a página de agendamento
+        function selecionarServico(servicoId) {
+            // Armazenar o ID do serviço selecionado no localStorage
+            localStorage.setItem('servicoSelecionado', servicoId);
+            
+            // Redirecionar para a página de agendamento
+            window.location.href = 'agendamento.html';
+        }
+        
+        // Função para selecionar um serviço com preço e redirecionar para a página de agendamento
+        function selecionarServicoComPreco(servicoId, preco) {
+            // Armazenar o ID do serviço selecionado no localStorage
+            localStorage.setItem('servicoSelecionado', servicoId);
+            
+            // Armazenar o preço selecionado no localStorage
+            localStorage.setItem('precoSelecionado', preco);
+            
+            // Redirecionar para a página de agendamento
+            window.location.href = 'agendamento.html';
+        }
+    </script>
+    
+    <style>
+        .preco-link {
+            text-decoration: none;
+            color: #522200;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .preco-link:hover {
+            color: #ff9900;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+    
+    <!-- Carregar script de administração para obter configurações do salão -->
+    <script src="admin.js"></script>
+    
+    <script>
+        // Função para selecionar serviço com preço
+        function selecionarServicoComPreco(servicoId, preco) {
+            localStorage.setItem('servicoSelecionado', servicoId);
+            localStorage.setItem('precoSelecionado', preco);
+            console.log('Serviço selecionado:', servicoId, 'Preço:', preco);
+        }
+    </script>
+</body>
+
+
+</html>
